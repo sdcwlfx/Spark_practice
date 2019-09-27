@@ -1,0 +1,20 @@
+{
+	"mac":"44-C3-46-5A-E5-93",
+	"brand":"Huawei Technologies Co.Ltd",
+	"cache_ssid":"",
+	"capture_time":1567047820,
+	"terminal_fieldstrenth":-5,
+	"identification_type":"",
+	"certificate_code":"",
+	"ssid_position":"",
+	"access_ap_mac":"68-DB-54-E0-A0-62",
+	"access_ap_channel":"",
+	"access_ap_encryption_type":"99",
+	"x_coordinate":0.0,
+	"y_coordinate":0.0,
+	"netbar_wacode":"",
+	"collection_equipmentid":"210102000000181",
+	"collection_equipment_longitude":123.418713,
+	"collection_equipment_latitude":41.7719617,
+	"lng_lat":"123.418713::41.7719617"
+}
