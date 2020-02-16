@@ -5,7 +5,8 @@
 
 # 目录说明
 - 根目录下wordcount.py文件以spark本地模式运行，统计word.txt中单词的数量：运行方法：进入根目录，执行命令 
-  /usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.11:2.3.3 wordcount.py
+
+           /usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.11:2.3.3 wordcount.py
 
 - 目录data、DStream_data、file_sort_data、rdd_data存放的数据文件
 
@@ -32,7 +33,6 @@
 - 运行consumer_result.py:
 
             /usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.11:2.3.3 consumer_result.py
-
 - RDD目录包含三个对spark RDD的实现，分别为文件排序、二次排序、Top-N,
   运行方式：
   
