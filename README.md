@@ -15,22 +15,27 @@
 - 启动hadoop:执行命令->sbin/start-dfs.sh
 - 启动kafka:
               
-              cd /usr/local/kafka/
+           cd /usr/local/kafka/
               
-              ./bin/zookeeper-server-start.sh config/zookeeper.properties
+           ./bin/zookeeper-server-start.sh config/zookeeper.properties
               
-              ./bin/kafka-server-start.sh config/server.properties
+           ./bin/kafka-server-start.sh config/server.properties
 - 监控输入输出终端：
               
-              /usr/local/kafka/bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic big_data_kj
+            /usr/local/kafka/bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic big_data_kj
               
-              /usr/local/kafka/bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic big_data_tmp
-              
+            /usr/local/kafka/bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic big_data_tmp
 - 运行producer.py:直接在pycharm中右击运行
-- 运行consumer_cp.py:/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.11:2.3.3 consumer_cp.py
-- 运行consumer_result.py:/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.11:2.3.3 consumer_result.py
+- 运行consumer_cp.py:
+
+            /usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.11:2.3.3 consumer_cp.py
+- 运行consumer_result.py:
+
+            /usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.11:2.3.3 consumer_result.py
 
 - RDD目录包含三个对spark RDD的实现，分别为文件排序、二次排序、Top-N,
-  运行方式：/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.11:2.3.3 文件名.py
+  运行方式：
+  
+            /usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.11:2.3.3 文件名.py
 - SparkStreaming目录是使用spark streaming进行流计算的实现
 - StructuredStreaming目录是使用structured streaming进行流计算的实现 
