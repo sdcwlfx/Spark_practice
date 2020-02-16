@@ -14,7 +14,9 @@
 #### kafka_json目录运行方式(spark单机模式)
 - 启动hadoop:执行命令->sbin/start-dfs.sh
 - 启动kafka:cd /usr/local/kafka/
+              
               ./bin/zookeeper-server-start.sh config/zookeeper.properties
+              
               ./bin/kafka-server-start.sh config/server.properties
 - 监控输入输出终端：/usr/local/kafka/bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic big_data_kj
                   /usr/local/kafka/bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic big_data_tmp
